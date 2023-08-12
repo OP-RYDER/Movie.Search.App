@@ -7,10 +7,25 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='m.ico') }}">
 </head>
 <body>
+
+
+
+    <div class="nav">
+        <h1>MSA</h1>
+        <div>
+            <p><a href="#">Home</a></p>
+            <p><a href="#abt">About</a></p>
+            <p><a href="#follow">Contact Us</a></p>
+        </div>
+
+    </div>
+
+
+
     <div class="container">
         <h1>Movie Search Application</h1>
         <form action="/search" method="post">
-            <input type="text" placeholder="Enter movie name" autocomplete="off" name="query" required>
+            <input type="text" placeholder="Enter movie name" required autocomplete="off" name="query" required>
             <input type="submit" value="Search">
         </form>
     </div>
@@ -27,8 +42,25 @@
             <hr>
         </div>
         {% endfor %}
+        <div><a class="more-details" href="https://www.google.com"> For More Details Click Here</a></div>
     </div>
     {% endif %}
+    <div class="footer">
+        <div id="abt" class="about">
+            <div>About</div>
+            <p>This a movie search web application named MSA utilizing HTML, CSS, JavaScript, Flask, and Python. By integrating the TMDb API, users can seamlessly explore a vast collection of movies, accessing key details and ratings. This project showcases my proficiency in frontend design, backend development, and API integration. MSA demonstrates my ability to create a user-friendly and interactive platform for movie enthusiasts.</p>
+        </div>
+        <div class="contactus">
+            <div id="follow">Follow Us on</div>
+            <div>
+                <a href="https://www.linkedin.com/in/laxmi-kant/">↪ Linked In</a>
+                <a href="https://www.instagram.com/_op_ryder/">↪ Instagram</a>
+                <a href="https://www.facebook.com/laxmikant.I.M/">↪ Facebook</a>
+                <a href="https://github.com/OP-RYDER">↪ GitHub</a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" title="vkvscr@gmail.com">↪ Gmail</a>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
